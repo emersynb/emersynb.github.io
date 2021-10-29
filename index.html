@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -22,35 +23,43 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery -->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
-      <div class="gallery-item">
-        <a
-          class="glightbox"
-          href="img/BF088200-EFED-468A-8CCB-3B1B1010A76A_Original.jpg"
-        >
-          <img
-            class="gallery-img"
-            src="img/BF088200-EFED-468A-8CCB-3B1B1010A76A_Original.jpg"
-            alt="Sunset"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a
-          class="glightbox"
-          href="img/39BCBBFF-FB73-4B9D-A201-09E4528DFFFD_Original.jpg"
-        >
-          <img
-            class="gallery-img"
-            src="img/39BCBBFF-FB73-4B9D-A201-09E4528DFFFD_Original.jpg"
-            alt="Butterfly"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="img/IMG_3934.jpg">
-          <img class="gallery-img" src="img/IMG_3934.jpg" alt="Tree"
-        /></a>
-      </div>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/BF088200-EFED-468A-8CCB-3B1B1010A76A_Original.jpg"
+            data-glightbox="title: Sunset; description: Sunset on Lake Erie"
+          >
+            <img
+              class="gallery-img"
+              src="img/BF088200-EFED-468A-8CCB-3B1B1010A76A_Original.jpg"
+              alt="Sunset"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="img/39BCBBFF-FB73-4B9D-A201-09E4528DFFFD_Original.jpg"
+            data-glightbox="title: Butterfly; description: Butterfly on a Flower"
+          >
+            <img
+              class="gallery-img"
+              src="img/39BCBBFF-FB73-4B9D-A201-09E4528DFFFD_Original.jpg"
+              alt="Butterfly"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="img/IMG_3934.jpg">
+            <img class="gallery-img" src="img/IMG_3934.jpg" alt="Tree"
+          /></a>
+        </div>
+      </section>
     </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
