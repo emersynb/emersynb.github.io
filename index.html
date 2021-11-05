@@ -7,15 +7,23 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <body>
     <header class="hero-box">
       <section class="hero-image-box">
-        <img
+        <!--<img
           class="hero-image"
           src="img/IMG_3039.JPG"
           alt="Cat on the front porch"
-        />
+        />-->
+        <video
+          src="video/FallSkyline.mp4"
+          class="hero-video"
+          autoplay
+          muted
+          loop
+        ></video>
       </section>
       <section class="hero-text-box">
         <h1 class="hero-heading">Dogs</h1>
@@ -57,6 +65,49 @@
         </div>
       </section>
     </section>
+    <!-- Begin About Section -->
+    <section class="about-container">
+      <section class="about-text">
+        <h1>Emersyn is an adventurous crazy artist</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odio!
+          Magnam fuga iusto, inventore, ipsam consequatur placeat cumque dolorum
+          a est, ipsum mollitia dolore fugit!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          accusantium voluptate nemo laudantium magni rem dolores quidem
+          delectus quisquam veniam esse necessitatibus, unde officia sequi.
+        </p>
+        <p>
+          <a href="enblack@student.cia.edu">Email Emersyn</a> at
+          enblack@student.cia.edu
+        </p>
+        <section class="about-social">
+          <a
+            href="http://instagram.com/emersynb"
+            aria-label="Link to Instagram"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a
+            href="http://Facebook.com/Emersyn Black"
+            aria-label="Link to Facebook"
+          >
+            <i class="fab fa-Facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            href="http://github.com/emersynb"
+            aria-label="Link to github"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+        </section>
+      </section>
+      <section class="about-image">
+        <img src="img/IMG_6816.jpg" alt="Profile pic of artwork">
+      </section>
+    </section>
+
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });

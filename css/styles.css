@@ -12,6 +12,7 @@ body {
   padding: 0;
   min-height: 100%;
   max-width: 100%;
+  padding-bottom: 10rem;
 }
 
 *,
@@ -48,11 +49,20 @@ img {
   grid-row: 1 / -1;
 }
 
-.hero-image {
+.hero-image,
+.hero-video {
   width: 100%;
   height: 100%;
   object-fit: fill;
   overflow: hidden;
+}
+
+.hero-video {
+  background-color: black;
+  background-image: url("../img/VideoStill.jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-text-box {
@@ -119,7 +129,40 @@ img {
   transform: scale(1.5);
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem auto 0 auto;
+}
+
+.about-text {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.about-social {
+  display: flex;
+  justify-content: start;
+}
+
+.about-social a {
+  color: black;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.about-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Media Queries Below */
+
 @media (min-width: 600px) {
   .hero-heading {
     color: pink;
@@ -134,6 +177,18 @@ img {
     font-size: 3rem;
     line-height: 3rem;
     padding-left: 1rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .about-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .about text p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -153,5 +208,12 @@ img {
   .portfoilo-container {
     font-size: 6rem;
     line-height: 6rem;
+  }
+  .about-container {
+    max-width: 1400px;
+  }
+  .about-text h1 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
   }
 }
