@@ -286,7 +286,7 @@ img {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
-  .portfoilo-container h1 {
+  .portfolio-container h1 {
     font-size: 3rem;
     line-height: 3rem;
     padding-left: 1rem;
@@ -294,6 +294,7 @@ img {
   .about-container {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    padding-right: 1rem;
   }
   .about-text h1 {
     font-size: 4rem;
@@ -330,7 +331,7 @@ img {
   .portfolio-container {
     max-width: 1400px;
   }
-  .portfoilo-container {
+  .portfoilo-container h1 {
     font-size: 6rem;
     line-height: 6rem;
   }
