@@ -278,7 +278,7 @@ img {
 
 @media (min-width: 600px) {
   .hero-heading {
-    color: pink;
+    color: white;
     font-size: 4rem;
     line-height: 4rem;
   }
@@ -320,7 +320,7 @@ img {
 
 @media (min-width: 920px) {
   .hero-heading {
-    color: pink;
+    color: white;
     font-size: 4rem;
     line-height: 4rem;
   }
